@@ -187,7 +187,7 @@ pub fn generate(
         ///
         /// To access the struct in this module, one should use the sibling
         /// `accounts` module (also generated), which re-exports this.
-        pub(crate) mod #account_mod_name {
+        pub mod #account_mod_name {
             use super::*;
             use anchor_lang::prelude::borsh;
             #(#re_exports)*
