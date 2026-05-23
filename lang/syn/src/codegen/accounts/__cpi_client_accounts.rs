@@ -191,7 +191,7 @@ pub fn generate(
         ///
         /// To access the struct in this module, one should use the sibling
         /// [`cpi::accounts`] module (also generated), which re-exports this.
-        pub(crate) mod #account_mod_name {
+        pub mod #account_mod_name {
             use super::*;
 
             #(#re_exports)*
